@@ -168,15 +168,7 @@ class ShiftController extends Controller
             \Log::info('canAccessShift: User not authenticated');
             return false;
         }
-
-            // DEBUG: cek perbedaan ID dan tipe data
-    \Log::info('canAccessShift Debug', [
-        'auth_id' => $user->id,
-        'shift_user_id' => $shift->user_id,
-        'auth_id_type' => gettype($user->id),
-        'shift_user_id_type' => gettype($shift->user_id),
-        'equal' => $shift->user_id === $user->id ? 'YES' : 'NO'
-    ]);
+        
         
         \Log::info('canAccessShift: User ID: ' . $user->id . ', Shift User ID: ' . $shift->user_id . ', Is Admin: ' . ($user->isAdmin() ? 'Yes' : 'No'));
         
@@ -186,7 +178,7 @@ class ShiftController extends Controller
         }
         
         // User biasa hanya bisa akses shift miliknya sendiri
-        $canAccess = $shift->user_id === $user->id;
+        $canAccess = (int) $shift->user_id === (int) $user->id;
         \Log::info('canAccessShift: Can access: ' . ($canAccess ? 'Yes' : 'No'));
         return $canAccess;
     }

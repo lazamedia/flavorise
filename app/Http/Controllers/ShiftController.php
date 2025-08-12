@@ -46,7 +46,7 @@ class ShiftController extends Controller
         }
 
         $existing = Shift::where('user_id', $userId)->active()->first();
-        if ($existing) {
+        if ($existing && !setting('allow_multiple_shifts', false)) {
             return redirect()->route('apps.shifts.index')->with('success', 'Masih ada shift aktif.');
         }
 
@@ -66,7 +66,7 @@ class ShiftController extends Controller
         }
 
         $existing = Shift::where('user_id', $userId)->active()->first();
-        if ($existing) {
+        if ($existing && !setting('allow_multiple_shifts', false)) {
             return redirect()->route('apps.shifts.index')->with('success', 'Masih ada shift aktif.');
         }
 

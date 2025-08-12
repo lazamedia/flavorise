@@ -95,8 +95,8 @@ use App\Http\Controllers\DashboardController;
 
     use App\Http\Controllers\AuthController;
 
-    Route::get('/login', [AuthController::class, 'index'])->name('login');
-    Route::post('/login', [AuthController::class, 'authenticate']);
+    Route::get('/login', [AuthController::class, 'index'])->name('login')->middleware('guest');
+    Route::post('/login', [AuthController::class, 'authenticate'])->middleware('guest');
     Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
     // Additional route for checking block status

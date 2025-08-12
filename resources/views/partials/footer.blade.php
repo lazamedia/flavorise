@@ -6,10 +6,10 @@
                 <!-- Company Info -->
                 <div class="space-y-4">
                     <div class="flex items-center space-x-2">
-                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-utensils text-white text-lg"></i>
+                        <div class="w-10 h-10  rounded-lg flex items-center justify-center">
+                            <img src="{{ asset('assets/img/logo.png') }}" alt="">
                         </div>
-                        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                        <h3 class="text-2xl font-bold bg-white bg-clip-text text-transparent">
                             FLAVORISE
                         </h3>
                     </div>

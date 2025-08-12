@@ -1,6 +1,6 @@
 <div id="sidebar" class="bg-white text-black w-64 fixed inset-y-0 left-0 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out z-50 overflow-y-auto flex flex-col">
     <div class="flex items-center justify-between p-6 ">
-        <h1 class="text-xl font-bold">Flavorise</h1>
+        <a href="/" class="text-xl font-bold">Flavorise</a>
         <button id="closeSidebar" class="lg:hidden text-black">
             <i class="fas fa-times"></i>
         </button>

@@ -171,7 +171,7 @@
                                     <div class="text-center text-gray-500">
                                         <iframe 
                                         class="rounded-lg border-2 border-white"
-                                        width="700" height="400" src="https://www.youtube.com/embed/IixHieT81ng?si=MbkTNKuV9Uj9YHBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        width="700" height="400" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>

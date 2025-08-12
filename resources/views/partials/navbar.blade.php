@@ -6,8 +6,8 @@
             <div class="flex items-center justify-between h-16 z-40">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-gradient-to-r from-red-900 to-red-500 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                        <i class="fas fa-utensils text-white text-lg"></i>
+                    <div class="w-10 h-10  rounded-xl flex items-center justify-center hover:shadow-xl transition-all duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/img/logo.png') }}" alt="">
                     </div>
                     <span class="text-2xl font-bold bg-gradient-to-r from-red-900 to-red-500 bg-clip-text text-transparent">
                         FLAVORISE

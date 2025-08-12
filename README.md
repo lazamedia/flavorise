@@ -48,6 +48,7 @@ Sistem Point of Sale (POS) berbasis Laravel untuk mengelola transaksi penjualan,
 2. **Install Dependencies**
    ```bash
    composer install
+   npm init
    npm install
    ```
 
@@ -76,8 +77,8 @@ Sistem Point of Sale (POS) berbasis Laravel untuk mengelola transaksi penjualan,
 6. **Build Assets & Start Server**
    ```bash
    npm init
-   npm install
    npm run dev
+   npm run build
    php artisan serve
    ```
 
